@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahjahan Samoo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+            <h1>Shahjahan Samoo</h1>
+            <p>Front-End Developer | UI/UX Designer | Graphic Designer</p>
+          
+        </div>
+    </section>
+
+    <!-- Separator Line -->
+    <div class="separator"></div>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <p>I’m Shahjahan Samoo, a passionate web developer and designer with a degree in BSCS from Ilma University. With experience in front-end development, UI/UX design, and graphic design, I bring a blend of creativity and technical expertise to every project.</p>
+            
+            <div class="education">
+                <h3>Education</h3>
+                <p>BSCS, Ilma University - 2024</p>
+            </div>
+
+            <div class="experience">
+                <h3>Professional Experience</h3>
+                <p>Internship, Prodigy Infotech - Web Development - 2024</p>
+            </div>
+
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Front-End: HTML, CSS, JavaScript, React, Vue.js</li>
+                    <li>UI/UX Design: Figma, Adobe XD, Sketch</li>
+                    <li>Graphic Design: Adobe Photoshop, Illustrator</li>
+                    <li>Tools: Git, Webpack, Docker</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website built with React and Node.js. Features include a responsive design, interactive elements, and a blog section.</p>
+                <p><strong>Technologies Used:</strong> React, Node.js, CSS3, MongoDB</p>
+            </div>
+            <div class="project-card">
+                <img src="calculator.jpg" alt="Calculator">
+                <h3>Calculator App</h3>
+                <p>A simple and functional calculator app built with vanilla JavaScript. Features include basic arithmetic operations and a user-friendly interface.</p>
+                <p><strong>Technologies Used:</strong> JavaScript, HTML, CSS</p>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Weather App</h3>
+                <p>A weather forecasting application that provides real-time weather updates using the OpenWeatherMap API, developed with vanilla JavaScript and CSS.</p>
+                <p><strong>Technologies Used:</strong> JavaScript, CSS, OpenWeatherMap API</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:shahjahansamoo@gmail.com">shahjahansamoo@gmail.com</a></p>
+            <p><strong>Phone:</strong> +92 317 125 9001</p>
+            <p><strong>Website:</strong> <a href="http://www.shahjahanportfolio.com" target="_blank">www.shahjahanportfolio.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shahjahan Samoo. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
